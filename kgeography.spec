@@ -1,6 +1,6 @@
 Name:		kgeography
 Summary:	A geography learning program
-Version:	4.13.2
+Version:	4.13.3
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
@@ -33,6 +33,9 @@ KGeography is a geography learning program.
 %makeinstall_std -C build
 
 %changelog
+* Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.13.3-1
+- New version 4.13.3
+
 * Wed Jun 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.13.2-1
 - New version 4.13.2
 
