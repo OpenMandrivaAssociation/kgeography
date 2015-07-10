@@ -5,7 +5,7 @@ Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://edu.kde.org/kgeography
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 
 %description
@@ -13,12 +13,13 @@ KGeography is a geography learning program.
 
 %files
 %doc README COPYING COPYING.DOC AUTHORS
-%doc %{_kde_docdir}/HTML/en/%{name}
-%{_kde_appsdir}/%{name}
-%{_kde_bindir}/%{name}
-%{_kde_iconsdir}/*/*/apps/%{name}.*
-%{_kde_applicationsdir}/%{name}.desktop
-%{_kde_datadir}/config.kcfg/%{name}.kcfg
+%doc %{_docdir}/HTML/en/%{name}
+%{_datadir}/%{name}
+%{_bindir}/%{name}
+%{_iconsdir}/*/*/apps/%{name}.*
+%{_datadir}/applications/org.kde.%{name}.desktop
+%{_datadir}/config.kcfg/%{name}.kcfg
+%{_datadir}/kxmlgui5/%{name}/%{name}.rc
 
 #----------------------------------------------------------------------
 
