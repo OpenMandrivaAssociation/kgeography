@@ -7,6 +7,15 @@ License:	GPLv2 GFDL
 URL:		http://edu.kde.org/kgeography
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
+BuildRequires: 	cmake(KF5XmlGui)
+BuildRequires: 	cmake(KF5WidgetsAddons)
+BuildRequires: 	cmake(KF5CoreAddons)
+BuildRequires: 	cmake(KF5ConfigWidgets)
+BuildRequires: 	cmake(KF5I18n)
+BuildRequires: 	cmake(KF5ItemViews)
+BuildRequires: 	cmake(KF5IconThemes)
+BuildRequires: 	cmake(KF5Service)
+BuildRequires: 	cmake(KF5DocTools)
 
 %description
 KGeography is a geography learning program.
