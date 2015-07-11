@@ -28,7 +28,7 @@ KGeography is a geography learning program.
 %{_iconsdir}/*/*/apps/%{name}.*
 %{_datadir}/applications/org.kde.%{name}.desktop
 %{_datadir}/config.kcfg/%{name}.kcfg
-%{_datadir}/kxmlgui5/%{name}/%{name}.rc
+%{_datadir}/kxmlgui5/%{name}/kgeographyui.rc
 
 #----------------------------------------------------------------------
 
