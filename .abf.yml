@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kgeography-15.08.0.tar.xz: a5c79f3e8a034c1d36bf5a3c678fbce82de12449
+sources:
+  kgeography-15.08.1.tar.xz: 81a1fa6281be83c11af74443ea03160498d65f1d
