@@ -16,6 +16,7 @@ BuildRequires: 	cmake(KF5ItemViews)
 BuildRequires: 	cmake(KF5IconThemes)
 BuildRequires: 	cmake(KF5Service)
 BuildRequires: 	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Crash)
 
 %description
 KGeography is a geography learning program.
