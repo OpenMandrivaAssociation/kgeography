@@ -1,11 +1,12 @@
 Name:		kgeography
 Summary:	A geography learning program
-Version:	16.12.2
+Version:	17.03.80
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://edu.kde.org/kgeography
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires: 	cmake(KF5XmlGui)
 BuildRequires: 	cmake(KF5WidgetsAddons)
