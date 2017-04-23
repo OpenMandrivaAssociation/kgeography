@@ -1,6 +1,6 @@
 Name:		kgeography
 Summary:	A geography learning program
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
@@ -22,9 +22,8 @@ BuildRequires:	cmake(KF5Crash)
 %description
 KGeography is a geography learning program.
 
-%files
+%files -f kgeography.lang
 %doc README COPYING COPYING.DOC AUTHORS
-%doc %{_docdir}/HTML/en/%{name}
 %{_datadir}/%{name}
 %{_bindir}/%{name}
 %{_iconsdir}/*/*/apps/%{name}.*
@@ -43,4 +42,4 @@ KGeography is a geography learning program.
 
 %install
 %ninja_install -C build
-
+%find_lang kgeography --with-html
