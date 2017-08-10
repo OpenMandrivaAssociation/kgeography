@@ -1,6 +1,6 @@
 Name:		kgeography
 Summary:	A geography learning program
-Version:	17.04.2
+Version:	17.07.90
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
@@ -30,6 +30,11 @@ KGeography is a geography learning program.
 %{_datadir}/applications/org.kde.%{name}.desktop
 %{_datadir}/config.kcfg/%{name}.kcfg
 %{_datadir}/kxmlgui5/%{name}/kgeographyui.rc
+%lang(fi) %{_datadir}/locale/fi/LC_SCRIPTS/kgeography
+%lang(fr) %{_datadir}/locale/fr/LC_SCRIPTS/kgeography
+%lang(ja) %{_datadir}/locale/ja/LC_SCRIPTS/kgeography
+%lang(pl) %{_datadir}/locale/pl/LC_SCRIPTS/kgeography
+%lang(uk) %{_datadir}/locale/uk/LC_SCRIPTS/kgeography
 
 #----------------------------------------------------------------------
 
