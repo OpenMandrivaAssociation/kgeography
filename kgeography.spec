@@ -1,7 +1,7 @@
 Name:		kgeography
 Summary:	A geography learning program
-Version:	22.12.3
-Release:	2
+Version:	23.03.90
+Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://edu.kde.org/kgeography
