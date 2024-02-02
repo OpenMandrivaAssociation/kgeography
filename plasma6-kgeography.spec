@@ -1,7 +1,7 @@
 Name:		plasma6-kgeography
 Summary:	A geography learning program
-Version:	24.01.90
-Release:	2
+Version:	24.01.95
+Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://edu.kde.org/kgeography
