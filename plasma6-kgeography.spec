@@ -7,7 +7,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
-URL:		http://edu.kde.org/kgeography
+URL:		https://edu.kde.org/kgeography
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/education/kgeography/-/archive/%{gitbranch}/kgeography-%{gitbranchd}.tar.bz2#/kgeography-%{git}.tar.bz2
