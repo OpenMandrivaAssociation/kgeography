@@ -4,7 +4,7 @@ Version:	23.08.5
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
-URL:		http://edu.kde.org/kgeography
+URL:		https://edu.kde.org/kgeography
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
