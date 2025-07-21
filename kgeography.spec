@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		kgeography
 Summary:	A geography learning program
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
@@ -26,10 +26,15 @@ BuildRequires: 	cmake(KF6Service)
 BuildRequires: 	cmake(KF6DocTools)
 BuildRequires:	cmake(KF6Crash)
 
+%rename plasma6-kgeography
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KGeography is a geography learning program.
 
-%files -f kgeography.lang
+%files -f %{name}.lang
 %doc README COPYING COPYING.DOC AUTHORS
 %{_datadir}/kgeography
 %{_bindir}/kgeography
@@ -43,18 +48,3 @@ KGeography is a geography learning program.
 %lang(ml) %{_datadir}/locale/ml/LC_SCRIPTS/kgeography
 %lang(pl) %{_datadir}/locale/pl/LC_SCRIPTS/kgeography
 %lang(uk) %{_datadir}/locale/uk/LC_SCRIPTS/kgeography
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kgeography-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang kgeography --with-html
