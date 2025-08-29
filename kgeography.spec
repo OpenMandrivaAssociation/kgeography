@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		kgeography
 Summary:	A geography learning program
-Version:	25.04.3
+Version:	25.08.0
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
